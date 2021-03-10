@@ -10,6 +10,7 @@
   --terciary_color: #e21d0e;
   --text_color: #EEE;
   scroll-behavior: smooth;
+  font-family: 'helvetica', cursive;
 }
 
 .navbar {
@@ -41,7 +42,7 @@ hr{
 }
 
 .navbar a:hover {
-  background: #ddd;
+  background: var(--text_color);
   color: black;
 }
 
@@ -88,7 +89,8 @@ hr{
 }
 
 .name_my {
-  font-size: 50px;
+  font-family: 'Bebas Neue';
+  font-size: 60px;
 }
 
 .page {
