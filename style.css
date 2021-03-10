@@ -5,14 +5,29 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  --primary_color: #222831;
+  --secondary_color: #393e46;
+  --terciary_color: #e21d0e;
+  --text_color: #EEE;
+  scroll-behavior: smooth;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--primary_color);
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+hr{
+  border: 0;
+	border-top: 1px solid var(--terciary_color);
+}
+
+.titles{
+  text-align: justify;
+  padding: 2% 5%;
 }
 
 .navbar a {
@@ -30,20 +45,46 @@
   color: black;
 }
 
+.parallax {
+  background-image: url("https://netsfibra.com.br/wp-content/uploads/2016/07/tech-background-image-1-1.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .apresentation {
-  background-color: #333;
+  background-color: var(--primary_color);
+  height: 100vh;
+}
+
+.information{
+  font-size: 20px;
+}
+
+.about{
+  text-align: justify;
+}
+
+.fa-lg{
+  position: relative;
+  top: 6px;
+  left: 12px;
 }
 
 .perfil {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 20% 0;
-  width: 60%;
+  padding: 5% 0;
+  width: 50%;
 }
 
 .name {
-  padding: 10% 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20% 0;
 }
 
 .name_my {
@@ -53,12 +94,12 @@
 .page {
   height: auto;
   text-align: center;
-  background-color: grey;
-  color: whitesmoke;
+  background-color: var(--secondary_color);
+  color: var(--text_color);
 }
 
 footer {
-  background-color: #333;
+  background-color: var(--primary_color);
   height: auto;
   margin-bottom: 0px;
 }
