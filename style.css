@@ -14,7 +14,7 @@
 
 .navbar {
   overflow: hidden;
-  background-color: var(--primary_color);
+  background-color: #222831;
   position: fixed;
   top: 0;
   width: 100%;
@@ -22,7 +22,7 @@
 
 hr{
   border: 0;
-	border-top: 1px solid var(--terciary_color);
+	border-top: 1px solid #e21d0e;
 }
 
 .titles{
@@ -55,7 +55,7 @@ hr{
 }
 
 .apresentation {
-  background-color: var(--primary_color);
+  background-color: #222831;
   height: 100vh;
 }
 
@@ -94,12 +94,12 @@ hr{
 .page {
   height: auto;
   text-align: center;
-  background-color: var(--secondary_color);
-  color: var(--text_color);
+  background-color: #393e46;
+  color: #eee;
 }
 
 footer {
-  background-color: var(--primary_color);
+  background-color: #222831;
   height: auto;
   margin-bottom: 0px;
 }
