@@ -23,7 +23,7 @@
 
 hr{
   border: 0;
-	border-top: 1px solid var(--terciary_color);
+	border-top: 2px solid var(--terciary_color);
 }
 
 .hrtitle{
@@ -39,6 +39,15 @@ hr{
   text-align: right;
 }
 
+a{
+  text-decoration: none;
+  color: var(--text_color);
+}
+
+a:hover{
+  color: var(--terciary_color)
+}
+
 .navbar a {
   float: right;
   display: block;
@@ -51,7 +60,7 @@ hr{
 
 .navbar a:hover {
   background: var(--text_color);
-  color: black;
+  color: var(--primary_color);
 }
 
 .parallax {
@@ -65,7 +74,8 @@ hr{
 
 .apresentation {
   background-color: var(--primary_color);
-  height: 100vh;
+  border: hidden;
+  box-shadow: 0 0 0.5em black;
 }
 
 .align{
@@ -102,6 +112,13 @@ hr{
   padding: 20% 0;
 }
 
+.name-contacts {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5% 0;
+  font-size: 15px;
+}
+
 .name_my {
   font-family: 'Bebas Neue';
   font-size: 66px;
@@ -112,6 +129,11 @@ hr{
   text-align: center;
   background-color: var(--secondary_color);
   color: var(--text_color);
+}
+
+.contacts{
+  text-align: center;
+  padding-left: 10%;
 }
 
 footer {
