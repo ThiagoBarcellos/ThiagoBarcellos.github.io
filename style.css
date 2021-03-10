@@ -26,9 +26,17 @@ hr{
 	border-top: 1px solid var(--terciary_color);
 }
 
+.hrtitle{
+  border-top: 4px solid var(--terciary_color);
+}
+
 .titles{
   text-align: justify;
   padding: 2% 5%;
+}
+
+.subtitle{
+  text-align: right;
 }
 
 .navbar a {
@@ -90,7 +98,7 @@ hr{
 
 .name_my {
   font-family: 'Bebas Neue';
-  font-size: 60px;
+  font-size: 66px;
 }
 
 .page {
