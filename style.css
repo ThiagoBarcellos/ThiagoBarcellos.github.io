@@ -68,11 +68,19 @@ hr{
   height: 100vh;
 }
 
+.align{
+  padding-left: 40%;
+  text-align: justify;
+}
+
 .information{
+  text-align: left;
+  padding-left: 5%;
   font-size: 20px;
 }
 
 .about{
+  margin-top: 0;
   text-align: justify;
 }
 
@@ -84,10 +92,8 @@ hr{
 
 .perfil {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5% 0;
-  width: 50%;
+  padding: 0 10%;
+  width: 95%;
 }
 
 .name {
