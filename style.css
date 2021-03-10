@@ -14,7 +14,7 @@
 
 .navbar {
   overflow: hidden;
-  background-color: #222831;
+  background-color: var(--primary_color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -22,7 +22,7 @@
 
 hr{
   border: 0;
-	border-top: 1px solid #e21d0e;
+	border-top: 1px solid var(--terciary_color);
 }
 
 .titles{
@@ -55,7 +55,7 @@ hr{
 }
 
 .apresentation {
-  background-color: #222831;
+  background-color: var(--primary_color);
   height: 100vh;
 }
 
@@ -70,7 +70,7 @@ hr{
 .fa-lg{
   position: relative;
   top: 6px;
-  left: 12px;
+  left: 10px;
 }
 
 .perfil {
@@ -94,12 +94,12 @@ hr{
 .page {
   height: auto;
   text-align: center;
-  background-color: #393e46;
-  color: #eee;
+  background-color: var(--secondary_color);
+  color: var(--text_color);
 }
 
 footer {
-  background-color: #222831;
+  background-color: var(--primary_color);
   height: auto;
   margin-bottom: 0px;
 }
