@@ -222,7 +222,6 @@ a:hover{
     margin-right: auto;
     padding: 5% 0;
     font-size: 6px;
-    text-align: left;
   }
   .hrtitle{
     border-top: 3px solid var(--terciary_color);
@@ -250,7 +249,7 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     padding: 5% 0;
-    font-size: 15px;
+    font-size: 5px;
   }
   .hrtitle{
     border-top: 3px solid var(--terciary_color);
@@ -278,7 +277,7 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     padding: 5% 0;
-    font-size: 15px;
+    font-size: 4px;
   }
   .hrtitle{
     border-top: 3px solid var(--terciary_color);
