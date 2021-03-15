@@ -102,6 +102,11 @@ a:hover{
   width: 95%;
 }
 
+.Profile-name{
+  text-align: left;
+  padding-left: 10%;
+}
+
 @media (min-width: 1440px){ /*Computador de alta resolução*/
   .name {
     margin-left: auto;
