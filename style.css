@@ -35,10 +35,6 @@ hr{
   padding: 2% 5%;
 }
 
-.subtitle{
-  text-align: right;
-}
-
 a{
   text-decoration: none;
   color: var(--text_color);
@@ -106,22 +102,184 @@ a:hover{
   width: 95%;
 }
 
-.name {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20% 0;
+@media (min-width: 1440px){ /*Computador de alta resolução*/
+  .name {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20% 0;
+  }
+  .name_my {
+    font-family: 'Bebas Neue';
+    font-size: 66px;
+  }
+  .subtitle{
+    text-align: right;
+  }
+  .name-contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 0;
+    font-size: 15px;
+  }
 }
 
-.name-contacts {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5% 0;
-  font-size: 15px;
+@media (min-width: 768px) and (max-width:1439px){ /*Computador de baixa resolução*/
+  .name {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25% 0;
+  }
+  .name_my {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+  }
+  .subtitle{
+    text-align: right;
+    font-size: 30px;
+  }
+  .name-contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 0;
+    font-size: 12px;
+  }
+  .sections{
+    font-size: 2em;
+  }
 }
 
-.name_my {
-  font-family: 'Bebas Neue';
-  font-size: 66px;
+@media (min-width: 426px) and (max-width: 768px) and (orientation: portrait){/*Modo tablet em pé*/
+  .name {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40% 0;
+  }
+  .name_my {
+    font-family: 'Bebas Neue';
+    font-size: 41px;
+  }
+  .subtitle{
+    text-align: right;
+    font-size: 21px;
+  }
+  .name-contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 0;
+    font-size: 11px;
+  }
+  .sections{
+    font-size: 1.9em;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) and (orientation: landscape){/*Modo tablet deitado*/
+  .name {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10% 0;
+  }
+  .name_my {
+    font-family: 'Bebas Neue';
+    font-size: 41px;
+  }
+  .subtitle{
+    text-align: right;
+    font-size: 21px;
+  }
+  .name-contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 0;
+    font-size: 11px;
+  }
+  .sections{
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 426px){ /*Celular grande*/
+  .name {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40% 0;
+  }
+  .name_my {
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+  }
+  .subtitle{
+    text-align: right;
+    font-size: 12px;
+  }
+  .name-contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 0;
+    font-size: 15px;
+  }
+  .hrtitle{
+    border-top: 3px solid var(--terciary_color);
+  }
+  .sections{
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 376px){ /*Celular médio*/
+  .name {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40% 0;
+  }
+  .name_my {
+    font-family: 'Bebas Neue';
+    font-size: 21px;
+  }
+  .subtitle{
+    text-align: right;
+    font-size: 10px;
+  }
+  .name-contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 0;
+    font-size: 15px;
+  }
+  .hrtitle{
+    border-top: 3px solid var(--terciary_color);
+  }
+  .sections{
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 320px){ /*Celular pequeno*/
+  .name {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50% 0;
+  }
+  .name_my {
+    font-family: 'Bebas Neue';
+    font-size: 18px;
+  }
+  .subtitle{
+    text-align: right;
+    font-size: 9px;
+  }
+  .name-contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 0;
+    font-size: 15px;
+  }
+  .hrtitle{
+    border-top: 3px solid var(--terciary_color);
+  }
+  .sections{
+    font-size: 1.7em;
+  }
 }
 
 .page {
