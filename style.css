@@ -13,12 +13,41 @@
   font-family: 'helvetica', cursive;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: var(--primary_color);
+nav{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 5;
+  background-color: var(--primary_color);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 3%;
+}
+
+li {
+  float: right;
+  text-decoration: none;
+}
+
+li a {
+  display: block;
+  color: var(--text_color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+}
+
+li a:hover {
+  text-decoration: none;
+  background-color: var(--text_color);
+  color: var(--primary_color);
 }
 
 hr{
@@ -47,22 +76,6 @@ a{
 
 a:hover{
   color: var(--terciary_color)
-}
-
-.navbar a {
-  float: right;
-  display: flex;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Bebas Neue';
-}
-
-.navbar a:hover {
-  background: var(--text_color);
-  color: var(--primary_color);
 }
 
 .parallax {
