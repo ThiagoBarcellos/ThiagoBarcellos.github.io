@@ -303,6 +303,10 @@ a.btn:hover{
   .card{
     width: 10em;
   }
+  li a{
+    padding: 9px 10px;
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 376px){ /*Celular médio*/
@@ -331,6 +335,10 @@ a.btn:hover{
   .sections{
     font-size: 1.7em;
   }
+  li a{
+    padding: 8px 9px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 320px){ /*Celular pequeno*/
@@ -358,6 +366,10 @@ a.btn:hover{
   }
   .sections{
     font-size: 1.7em;
+  }
+  li a{
+    padding: 7px 8px;
+    font-size: 15px;
   }
 }
 
