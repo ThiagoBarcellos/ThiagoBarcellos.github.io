@@ -250,7 +250,7 @@ a.btn:hover{
   .name {
     margin-left: auto;
     margin-right: auto;
-    padding: 10% 0;
+    padding: 25% 0;
   }
   .name_my {
     font-family: 'Bebas Neue';
@@ -275,15 +275,15 @@ a.btn:hover{
   .name {
     margin-left: auto;
     margin-right: auto;
-    padding: 40% 0;
+    padding: 35% 0;
   }
   .name_my {
     font-family: 'Bebas Neue';
-    font-size: 24px;
+    font-size: 35px;
   }
   .subtitle{
     text-align: right;
-    font-size: 12px;
+    font-size: 17px;
   }
   .name-contacts {
     margin-left: auto;
@@ -313,15 +313,15 @@ a.btn:hover{
   .name {
     margin-left: auto;
     margin-right: auto;
-    padding: 40% 0;
+    padding: 35% 0;
   }
   .name_my {
     font-family: 'Bebas Neue';
-    font-size: 21px;
+    font-size: 30px;
   }
   .subtitle{
     text-align: right;
-    font-size: 10px;
+    font-size: 15px;
   }
   .name-contacts {
     margin-left: auto;
@@ -349,11 +349,11 @@ a.btn:hover{
   }
   .name_my {
     font-family: 'Bebas Neue';
-    font-size: 18px;
+    font-size: 26px;
   }
   .subtitle{
     text-align: right;
-    font-size: 9px;
+    font-size: 12px;
   }
   .name-contacts {
     margin-left: auto;
