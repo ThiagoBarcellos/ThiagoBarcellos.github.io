@@ -41,7 +41,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Bebas Neue';
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 li a:hover {
@@ -63,6 +63,19 @@ hr{
 .hrtitle{
   border-top: 4px solid var(--terciary_color);
 }
+
+.name{
+  margin-top: 50%;
+}
+
+.name_my{
+  font-family: 'Bebas Neue';
+  font-size: 3rem;
+}
+
+.subtitle{
+    text-align: right;
+  }
 
 .titles{
   text-align: justify;
@@ -166,8 +179,8 @@ a.btn:hover{
   text-align: left;
   padding-left: 10%;
 }
-
-@media (min-width: 1440px){ /*Computador de alta resolução*/
+/*
+@media (min-width: 1440px){ 
   .name {
     margin-left: auto;
     margin-right: auto;
@@ -191,7 +204,7 @@ a.btn:hover{
   }
 }
 
-@media (min-width: 768px) and (max-width:1439px){ /*Computador de baixa resolução*/
+@media (min-width: 768px) and (max-width:1439px){ 
   .name {
     margin-left: auto;
     margin-right: auto;
@@ -216,7 +229,7 @@ a.btn:hover{
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) and (orientation: portrait){/*Modo tablet em pé*/
+@media (min-width: 426px) and (max-width: 768px) and (orientation: portrait){
   .name {
     margin-left: auto;
     margin-right: auto;
@@ -244,7 +257,7 @@ a.btn:hover{
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) and (orientation: landscape){/*Modo tablet deitado*/
+@media (min-width: 426px) and (max-width: 768px) and (orientation: landscape){
   .name {
     margin-left: auto;
     margin-right: auto;
@@ -268,8 +281,8 @@ a.btn:hover{
     font-size: 2em;
   }
 }
-
-@media (max-width: 426px){ /*Celular grande*/
+/*
+@media (max-width: 426px){ 
   .name {
     margin-left: auto;
     margin-right: auto;
@@ -310,7 +323,7 @@ a.btn:hover{
   }
 }
 
-@media (max-width: 376px){ /*Celular médio*/
+@media (max-width: 376px){ 
   .name {
     margin-left: auto;
     margin-right: auto;
@@ -345,7 +358,7 @@ a.btn:hover{
   }
 }
 
-@media (max-width: 320px){ /*Celular pequeno*/
+@media (max-width: 320px){ 
   .name {
     margin-left: auto;
     margin-right: auto;
@@ -379,6 +392,69 @@ a.btn:hover{
     width: 100%;
   }
 }
+/*---------------------------------------------*/
+
+/*Phone*/
+@media only screen and (max-width:320px){
+  .name_my{
+    font-size: 1.85rem;
+  }
+  .subtitle{
+    font-size: 0.9rem;
+  }
+  .parallax{
+    height: 80vh;
+  }
+  li a{
+    font-size: 0.8rem;
+  }
+  .sections{
+    font-size: 1.8rem;
+  }
+  .fa-2x{
+    font-size: 1.8rem;
+  }
+  .name-contacts{
+    visibility: hidden;
+  }
+}
+
+/*Tablet*/
+@media only screen and (min-width:321px) and (max-width:768px){
+  .name_my{
+    font-size: 2rem;
+  }
+  .subtitle{
+    font-size: 1.2rem;
+  }
+  .parallax{
+    height: 80vh;
+  }
+  li a{
+    font-size: 0.9rem;
+  }
+  .sections{
+    font-size: 2rem;
+  }
+  .fa-2x{
+    font-size: 2.5rem;
+  }
+  .name-contacts{
+    visibility: hidden;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width:769px){
+  .name{
+    margin-top: 25%;
+  }
+  .perfil{
+    justify-items: center;
+  }
+}
+
+
 
 .page {
   height: auto;
@@ -389,7 +465,6 @@ a.btn:hover{
 
 .contacts{
   text-align: center;
-  padding-left: 10%;
 }
 
 footer {
