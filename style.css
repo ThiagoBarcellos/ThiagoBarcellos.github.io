@@ -62,6 +62,8 @@ hr{
 
 .hrtitle{
   border-top: 4px solid var(--terciary_color);
+  margin-top: -0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .name{
@@ -70,11 +72,14 @@ hr{
 
 .name_my{
   font-family: 'Bebas Neue';
-  font-size: 3rem;
+  font-size: 3.8rem;
+  text-align: justify;
+  line-height: 80%;
 }
 
 .subtitle{
     text-align: right;
+    font-size: 1.5rem;
   }
 
 .titles{
@@ -396,11 +401,14 @@ a.btn:hover{
 
 /*Phone*/
 @media only screen and (max-width:320px){
+  .name{
+    margin-top: 60%;
+  }
   .name_my{
-    font-size: 1.85rem;
+    font-size: 2.3rem;
   }
   .subtitle{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .parallax{
     height: 80vh;
@@ -422,10 +430,10 @@ a.btn:hover{
 /*Tablet*/
 @media only screen and (min-width:321px) and (max-width:768px){
   .name_my{
-    font-size: 2rem;
+    font-size: 2.7rem;
   }
   .subtitle{
-    font-size: 1.2rem;
+    font-size: 0.85rem;
   }
   .parallax{
     height: 80vh;
