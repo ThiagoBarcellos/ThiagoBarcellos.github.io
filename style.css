@@ -24,9 +24,7 @@ nav{
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
-  margin-right: 3%;
 }
 
 li {
@@ -67,12 +65,17 @@ hr{
 }
 
 .name{
-  margin-top: 50%;
+
+  height: 100vh;
+  line-height: 100vh;
+  padding-top: 50%;
+  
+  align-items: center;
 }
 
 .name_my{
   font-family: 'Bebas Neue';
-  font-size: 3.8rem;
+  font-size: 5vw;
   text-align: justify;
   line-height: 80%;
 }
@@ -97,7 +100,7 @@ a:hover{
 }
 
 .parallax {
-  background-image: url("https://netsfibra.com.br/wp-content/uploads/2016/07/tech-background-image-1-1.jpg");
+  background-image: url("../ThiagoBarcellos.github.io/Images/Bg.jpeg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -106,6 +109,7 @@ a:hover{
 }
 
 .apresentation {
+  width: 100%;
   background-color: var(--primary_color);
   border: hidden;
   box-shadow: 0 0 0.5em black;
@@ -184,228 +188,20 @@ a.btn:hover{
   text-align: left;
   padding-left: 10%;
 }
-/*
-@media (min-width: 1440px){ 
-  .name {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20% 0;
-  }
-  .name_my {
-    font-family: 'Bebas Neue';
-    font-size: 66px;
-  }
-  .subtitle{
-    text-align: right;
-  }
-  .name-contacts {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5% 0;
-    font-size: 15px;
-  }
-  .card{
-    width: 22em;
-  }
-}
-
-@media (min-width: 768px) and (max-width:1439px){ 
-  .name {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25% 0;
-  }
-  .name_my {
-    font-family: 'Bebas Neue';
-    font-size: 48px;
-  }
-  .subtitle{
-    text-align: right;
-    font-size: 30px;
-  }
-  .name-contacts {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5% 0;
-    font-size: 12px;
-  }
-  .sections{
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 426px) and (max-width: 768px) and (orientation: portrait){
-  .name {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40% 0;
-  }
-  .name_my {
-    font-family: 'Bebas Neue';
-    font-size: 38px;
-  }
-  .subtitle{
-    text-align: right;
-    font-size: 21px;
-  }
-  .name-contacts {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5% 0;
-    font-size: 11px;
-  }
-  .sections{
-    font-size: 1.9em;
-  }
-  .card{
-    max-width: 360px;
-  }
-}
-
-@media (min-width: 426px) and (max-width: 768px) and (orientation: landscape){
-  .name {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25% 0;
-  }
-  .name_my {
-    font-family: 'Bebas Neue';
-    font-size: 39px;
-  }
-  .subtitle{
-    text-align: right;
-    font-size: 21px;
-  }
-  .name-contacts {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5% 0;
-    font-size: 11px;
-  }
-  .sections{
-    font-size: 2em;
-  }
-}
-/*
-@media (max-width: 426px){ 
-  .name {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 35% 0;
-  }
-  .name_my {
-    font-family: 'Bebas Neue';
-    font-size: 33px;
-  }
-  .subtitle{
-    text-align: right;
-    font-size: 17px;
-  }
-  .name-contacts {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.6em;
-    text-align: center;
-  }
-  .hrtitle{
-    border-top: 3px solid var(--terciary_color);
-  }
-  .sections{
-    font-size: 1.7em;
-  }
-  .fa-lg{
-    padding-bottom: 0.5em;
-  }
-  .card{
-    width: 360px;
-  }
-  li a{
-    padding: 9px 10px;
-    font-size: 17px;
-  }
-  .card{
-    width: 100%;
-  }
-}
-
-@media (max-width: 376px){ 
-  .name {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 35% 0;
-  }
-  .name_my {
-    font-family: 'Bebas Neue';
-    font-size: 28px;
-  }
-  .subtitle{
-    text-align: right;
-    font-size: 15px;
-  }
-  .name-contacts {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5% 0;
-    font-size: 5px;
-  }
-  .hrtitle{
-    border-top: 3px solid var(--terciary_color);
-  }
-  .sections{
-    font-size: 1.7em;
-  }
-  li a{
-    padding: 8px 9px;
-    font-size: 16px;
-  }
-  .card{
-    width: 100%;
-  }
-}
-
-@media (max-width: 320px){ 
-  .name {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50% 0;
-  }
-  .name_my {
-    font-family: 'Bebas Neue';
-    font-size: 24px;
-  }
-  .subtitle{
-    text-align: right;
-    font-size: 12px;
-  }
-  .name-contacts {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5% 0;
-    font-size: 4px;
-  }
-  .hrtitle{
-    border-top: 3px solid var(--terciary_color);
-  }
-  .sections{
-    font-size: 1.7em;
-  }
-  li a{
-    padding: 7px 8px;
-    font-size: 15px;
-  }
-  .card{
-    width: 100%;
-  }
-}
-/*---------------------------------------------*/
 
 /*Phone*/
 @media only screen and (max-width:320px){
-  .name{
-    margin-top: 60%;
+  body, nav, ul{
+    width: 320px;
+    margin-right: 0%;
+    padding-left: 0%;
+  }
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto{
+    padding-left: 0;
+    padding-right: 0;
   }
   .name_my{
-    font-size: 2.3rem;
+    font-size: 12vw;
   }
   .subtitle{
     font-size: 0.7rem;
@@ -414,7 +210,8 @@ a.btn:hover{
     height: 80vh;
   }
   li a{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    padding: 20px 6px;
   }
   .sections{
     font-size: 1.8rem;
@@ -424,6 +221,9 @@ a.btn:hover{
   }
   .name-contacts{
     visibility: hidden;
+  }
+  .titles{
+    padding-top: 15%;
   }
 }
 
@@ -450,12 +250,15 @@ a.btn:hover{
   .name-contacts{
     visibility: hidden;
   }
+  nav{
+    text-align: center;
+  }
 }
 
 /*Desktop*/
 @media only screen and (min-width:769px){
   .name{
-    margin-top: 25%;
+    padding-top: 25%;
   }
   .perfil{
     justify-items: center;
