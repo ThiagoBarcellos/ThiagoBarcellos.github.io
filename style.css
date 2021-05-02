@@ -100,7 +100,7 @@ a:hover{
 }
 
 .parallax {
-  background-image: url("../ThiagoBarcellos.github.io/Images/Bg.jpeg");
+  background-image: url("./Images/Bg.jpeg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -210,7 +210,7 @@ a.btn:hover{
     height: 80vh;
   }
   li a{
-    font-size: 1.2rem;
+    font-size: 1.299rem;
     padding: 20px 6px;
   }
   .sections{
