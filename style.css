@@ -65,11 +65,9 @@ hr{
 }
 
 .name{
-
   height: 100vh;
   line-height: 100vh;
   padding-top: 50%;
-  
   align-items: center;
 }
 
@@ -153,6 +151,16 @@ a:hover{
   color: var(--text_color);
   text-align: justify;
   text-indent: 2.5em;
+}
+
+.about-text{
+  color: var(--text_color);
+  text-align: justify;
+  text-indent: 2.5em;
+  font-size: 1.2vw;
+  margin: 0%;
+  padding-top: 0%;
+  word-break: normal;
 }
 
 .btn{
