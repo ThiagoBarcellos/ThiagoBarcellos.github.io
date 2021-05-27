@@ -54,6 +54,10 @@ hr{
 	border-top: 2px solid var(--terciary_color);
 }
 
+.perfil-info{
+  width: 80%;
+}
+
 .hr-card{
   border: 0;
 	border-top: 1px solid rgba(255,255,255,0.5);
@@ -128,16 +132,16 @@ a:hover{
 .about{
   margin-top: 0;
   text-align: justify;
+  padding-right: 7%;
 }
 
 .about-text{
   color: var(--text_color);
-  text-align: justify;
+  text-align:justify;
   text-indent: 2.5em;
-  font-size: 1.3vw;
   margin: 0%;
   padding-top: 0%;
-  word-break: normal;
+  line-height: 145%;
 }
 
 .fa-lg{
@@ -149,7 +153,7 @@ a:hover{
 .card{
   background-color: var(--secondary_color);
   border-style: hidden;
-  min-height: 550px;
+  min-height: 570px;
 }
 
 .card-title{
@@ -188,7 +192,7 @@ a.btn:hover{
 .perfil {
   display: block;
   padding: 0 10%;
-  width: 95%;
+  width: 90%;
   border-radius: 25%;
   border-top-left-radius: 0;
 }
@@ -234,8 +238,14 @@ a.btn:hover{
   .titles{
     padding-top: 15%;
   }
-  .about-text{
-    font-size: 5vw;
+  .perfil{
+    width: 100%;
+  }
+  .perfil-info{
+    width: 100%;
+  }
+  .Profile-name{
+    padding-left: 13%;
   }
 }
 
@@ -267,6 +277,12 @@ a.btn:hover{
   }
   .about-text{
     font-size: 5vw;
+  }
+  .perfil{
+    width: 100%;
+  }
+  .perfil-info{
+    width: 100%;
   }
 }
 
