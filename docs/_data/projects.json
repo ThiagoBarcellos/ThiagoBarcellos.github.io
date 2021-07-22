@@ -1,0 +1,23 @@
+{
+    "games": [
+        {
+            "title": "CaçaCabeça",
+            "description": "Um jogo sobre o cavaleiro sem cabeça deve encontrar sua cabeça que brigou com ele, para avançar pelos desafios usa de objetos substitutos para sua cabeça em uma união de pinball e dungeon crawler.",
+            "image": "GGJ_2021.png",
+            "unity": true,
+            "desktop": true,
+            "mobile": false,
+            "language": "C#",
+            "path": "https://github.com/ThiagoBarcellos/GGJ_Project_2021"
+        },
+        {
+            "title": "Cubetrix",
+            "description": "Um jogo sobre o cavaleiro sem cabeça deve encontrar sua cabeça que brigou com ele, para avançar pelos desafios usa de objetos substitutos para sua cabeça em uma união de pinball e dungeon crawler.",
+            "image": "Cubetrix.png",
+            "unity": true,
+            "desktop": false,
+            "mobile": true,
+            "language": "C#"
+        }
+    ]
+}
