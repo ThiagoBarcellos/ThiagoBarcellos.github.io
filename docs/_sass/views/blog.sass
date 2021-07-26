@@ -1,0 +1,58 @@
+@import "../_variables"
+@import "../_mixins"
+
+.posts-list
+
+  & h2 
+    color: $primary-color
+    font-size: 18px
+    margin: 20px 0
+
+  &__tags 
+    margin-bottom: 30px
+    margin-top: 40px
+
+    & h4 
+      text-align: left
+      margin-bottom: 5px
+    
+    &--item
+      display: inline-block
+      background: $secondary-color
+      color: $text-color
+      padding: .3rem .5rem
+      margin-right: .5rem
+      border-radius: 4px
+      font-size: 90%
+      -webkit-transition: all 0.1s ease-in-out
+      -moz-transition: all 0.1s ease-in-out
+      transition: all 0.1s ease-in-out
+
+      &:hover
+        background: $text-color
+        text-decoration: none
+        color: $secondary-color
+
+  &__post
+    padding: 4px 0
+
+    &--date 
+      color: rgba($text-color , 0.8)
+
+    & p 
+      margin: 5px 0
+
+    & a
+      color: $secondary-color
+      font-weight: bold
+      font-size: 12px
+
+      &:hover
+        color: $terciary-color-alt-hover
+        text-decoration: none
+  
+  &__divider
+    background-color: $terciary-color
+    margin: 10px 0
+    height: 2px
+    width: 100%

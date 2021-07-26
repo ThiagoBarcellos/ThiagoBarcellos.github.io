@@ -3,7 +3,8 @@
 
 header
   background: $secondary-color
-  padding: 20px 10%
+  @include tablets-and-down
+    padding: 20px 10%
   @include mobile-and-down
     padding: 20px 20px
 
@@ -21,20 +22,37 @@ header
     margin-right: auto
     font-weight: bold
     color: $text-color
+    text-decoration: none
+
+    &:hover
+      text-decoration: none
+      color: $terciary-color
+
+  ul
+    margin: 0
+  
+  li
+    background-color: $secondary-color
+    a
+      color: $text-color
+
+    &:hover
+      background-color: $text-color
+      a
+        color: $secondary-color
 
   &__item 
     display: inline-block
-    padding: 15px 20px 0 20px
+    padding: 25px 0px
+    font-size: 1.3vw
     
     a
-      color: $text-color
-      
-      &:hover 
-        color: $terciary-color
+      padding: 25px 15px
+      text-decoration: none
 
 .menu-mobile 
   display: none
-  height: 230px
+  height: 260px
   @include display-col
   text-align: center
 
@@ -43,7 +61,7 @@ header
 
     & li, a
       color: $text-color
-      font-size: 14px
+      font-size: 18px
       font-weight: bold
       margin: 30px 0
       list-style-type: none
