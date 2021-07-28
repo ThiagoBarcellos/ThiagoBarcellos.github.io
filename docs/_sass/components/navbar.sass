@@ -2,7 +2,8 @@
 @import "../_mixins"
 
 header
-  background: $secondary-color
+  background: $primary-color
+  border-bottom: 2px solid $terciary-color
   @include tablets-and-down
     padding: 20px 10%
   @include mobile-and-down
@@ -32,8 +33,11 @@ header
     margin: 0
   
   li
-    background-color: $secondary-color
+    background-color: $primary-color
     a
+      font-family: 'Bebas Neue'
+      font-weight: normal
+      font-size: 25px
       color: $text-color
 
     &:hover
@@ -60,6 +64,7 @@ header
     margin-top: 40px
 
     & li, a
+      font-family: 'Bebas Neue'
       color: $text-color
       font-size: 18px
       font-weight: bold
@@ -75,4 +80,4 @@ header
       display: none
 
     & i
-      color: $primary-color
+      color: $secondary-color

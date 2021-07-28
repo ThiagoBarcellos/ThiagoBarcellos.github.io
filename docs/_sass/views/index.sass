@@ -1,0 +1,38 @@
+@import "../_variables"
+@import "../_mixins"
+
+.parallax 
+  background-image: url("../Images/bg.jpeg")
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  border-bottom: 2px solid rgba($primary-color , 0.6)
+
+.name
+  height: 70vh
+  line-height: 100vh
+  align-items: center
+
+.name_my
+  font-family: 'Bebas Neue'
+  font-size: 5vw
+  text-align: justify
+  line-height: 80%
+
+.subtitle
+  text-align: right
+  font-size: 1.5rem
+
+.centralize-vertically
+  margin: 0
+  position: absolute
+  top: 50%
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+.about-section
+  &__title
+    color: $terciary-color
+    font-family: 'Bebas Neue'
+    padding-bottom: 10px 

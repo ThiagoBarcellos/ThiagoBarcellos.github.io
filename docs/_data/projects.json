@@ -18,6 +18,15 @@
             "desktop": false,
             "mobile": true,
             "language": "C#"
+        },
+        {
+            "title": "Cubetrix",
+            "description": "Um jogo sobre o cavaleiro sem cabeça deve encontrar sua cabeça que brigou com ele, para avançar pelos desafios usa de objetos substitutos para sua cabeça em uma união de pinball e dungeon crawler.",
+            "image": "Cubetrix.png",
+            "unity": true,
+            "desktop": false,
+            "mobile": true,
+            "language": "C#"
         }
     ]
 }
