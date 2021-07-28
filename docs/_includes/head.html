@@ -9,6 +9,25 @@
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="{{ site.baseusrl }}/assets/css/main.css"> 
     <script src="https://kit.fontawesome.com/5d13920381.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="{{ site.baseusrl }}/manifest.json">
+    <link rel="shortcut icon" type="image/jpg" href="{{ site.baseusrl }}/assets/images/mcdonalds-logo.jpg"/>
     <title>{{ site.title }} </title>
     {% feed_meta %}
   </head>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+    if (navigator.serviceWorker.controller) {
+      console.log("An active service worker found, no need to register");
+    } else {
+      // Register the service worker
+      navigator.serviceWorker
+        .register("{{ site.baseurl }}/service-worker.js", {
+          scope: "./"
+        })
+        .then(function (reg) {
+          console.log("Service worker has been registered for scope: " + reg.scope);
+        });
+    }
+  }
+  </script>

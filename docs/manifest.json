@@ -1,0 +1,18 @@
+{
+    "lang": "pt-BR",
+    "dir": "ltr\rtl",
+    "name": "Thiago nome do site",
+    "short_name": "Th Site",
+    "icons": [
+      {
+        "src": "\/assets\/images\/mcdonalds-logo.jpg",
+        "sizes": "192x192",
+        "type": "image\/png"
+      }
+    ],
+    "theme_color": "#1c1c1c",
+    "background_color": "#1c1c1c",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "natural"
+  }

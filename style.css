@@ -103,7 +103,7 @@ a:hover{
 }
 
 .parallax {
-  background-image: url("./Images/Bg.jpeg");
+  background-image: url("./images/Bg.jpeg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
