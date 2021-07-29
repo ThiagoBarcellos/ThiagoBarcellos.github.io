@@ -5,7 +5,7 @@
     "short_name": "Th Site",
     "icons": [
       {
-        "src": "\/assets\/images\/.jpg",
+        "src": "\/assets\/images\/logo.png",
         "sizes": "192x192",
         "type": "image\/png"
       }

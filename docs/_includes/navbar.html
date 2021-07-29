@@ -1,7 +1,7 @@
 <header>
     <nav class="menu container">
       <a class="menu__logo" href="/">
-        {{ site.title }}
+        <img class="menu__logo--icon" src="{{site.baseurl}}/assets/images/logo_transparente_branco.png">
       </a>
       <ul>
         <li class="menu__item"><a href="/">Início</a></li>
@@ -35,9 +35,8 @@
    
   </header>
   
-  
   <script language="JavaScript">
-    document.getElementsByClassName('menu-mobile')[0].style.display = 'none'
+    /*document.getElementsByClassName('menu-mobile')[0].style.display = 'none'
   
     function toggle() {    
       var state = document.getElementsByClassName('menu-mobile')[0].style.display;
@@ -45,6 +44,17 @@
           document.getElementsByClassName('menu-mobile')[0].style.display = 'none';
       } else {
           document.getElementsByClassName('menu-mobile')[0].style.display = 'block';
+      }
+    }*/
+
+    document.getElementsByClassName('menu-mobile')[0].style.height = '0'
+  
+    function toggle() {    
+      var state = document.getElementsByClassName('menu-mobile')[0].style.height;
+      if (state == '100%') {
+          document.getElementsByClassName('menu-mobile')[0].style.height = '0';
+      } else {
+          document.getElementsByClassName('menu-mobile')[0].style.height = '100%';
       }
     }
   </script>
