@@ -5,28 +5,31 @@ permalink: /404.html
 {% include head.html %}
 
 <div class="wrapper">
-  {% include navbar.html %}
 
-  <div class="container">
-    <h1>404</h1>
+  <body>
+    {% include sidebar.html %}
 
-    <p><strong>Page not found :(</strong></p>
-    <p>The requested page could not be found.</p>
-  </div>
+    <div class="container">
+      <h1>404</h1>
 
-  {% include footer.html%}
+      <p><strong>Page not found :(</strong></p>
+      <p>The requested page could not be found.</p>
+    </div>
+
+    {% include footer.html%}
 </div>
+</body>
 
 <style type="text/css" media="screen">
   * {
     text-align: center;
   }
-  
-  .wrapper{
-   height: auto; 
+
+  .wrapper {
+    height: auto;
   }
 
-  footer{
+  footer {
     position: absolute;
     bottom: 0;
     width: 100%;

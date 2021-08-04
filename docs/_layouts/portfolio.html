@@ -2,19 +2,22 @@
 ---
 
 {% include head.html %}
-{% include navbar.html %}
-<main>
-    <section class="container">
-        
-        {% include title.html %}
 
-        <h2 class="portfolio-title">Games</h2>
-        
-        <div class="row">
-            {% include card.html %}
-        </div>
-    </section>
-    <section>
-        {% include footer.html %}
-    </section>
-</main>
+<body>
+    {% include sidebar.html %}
+    <main>
+        <section class="container">
+
+            {% include title.html %}
+
+            <h2 class="portfolio-title">Games</h2>
+
+            <div class="row">
+                {% include card.html %}
+            </div>
+        </section>
+        <section>
+            {% include footer.html %}
+        </section>
+    </main>
+</body>

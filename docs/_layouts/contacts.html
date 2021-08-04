@@ -2,26 +2,30 @@
 ---
 
 {% include head.html %}
-<div class="wrapper">
-    {% include navbar.html %}
-    <main>
-        <section class="container">
 
-            <div class="row container justify-content-center">
-                <div class="col-sm-12 col-md-10 col-lg-10 contact-text">
-                    <h2 class="contact-text__title">Em que posso ajudar?</h2>
-                    <p>Esse form foi criado com <a href="https://formspree.io">Formspree</a> e seus dados estão
-                        seguros, portanto
-                        não irei utilizar seu email para ads. Ele serve apenas para responder sua pergunta. Desde de já
-                        obrigado
-                        pelo seu contato.🧑‍🚀</p>
+<body>
+    <div class="wrapper">
+        {% include sidebar.html %}
+        <main>
+            <section class="container">
+                {% include title.html %}
+                <div class="row container justify-content-center">
+                    <div class="col-sm-12 col-md-10 col-lg-10 contact-text">
+                        <h2 class="contact-text__title">Em que posso ajudar?</h2>
+                        <p>Esse form foi criado com <a href="https://formspree.io">Formspree</a> e seus dados estão
+                            seguros, portanto
+                            não irei utilizar seu email para ads. Ele serve apenas para responder sua pergunta. Desde de
+                            já
+                            obrigado
+                            pelo seu contato.🧑‍🚀</p>
+                    </div>
                 </div>
-            </div>
-            {% include form.html %}
+                {% include form.html %}
 
-        </section>
-        <section class="foot">
-            {% include footer.html %}
-        </section>
-    </main>
-</div>
+            </section>
+            <section class="foot">
+                {% include footer.html %}
+            </section>
+        </main>
+    </div>
+</body>

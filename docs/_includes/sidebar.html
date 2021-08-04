@@ -1,0 +1,66 @@
+<nav class="sidebar">
+    <div class="sidebar__logo-content">
+        <div class="sidebar__logo">
+            <i class='bx bxl-c-plus-plus'></i>
+            <div class="sidebar__logo-name">ThiagoBarcellos</div>
+        </div>
+        <i class='bx bx-menu' id="btn" onclick="hideAndShowSidebar(event)"></i>
+    </div>
+    <ul class="nav_list">
+        <li>
+            <a href="/">
+                <i class='bx bx-home'></i>
+                <span class="links_name">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+
+        <li>
+            <a href="/about/">
+                <i class='bx bx-user'></i>
+                <span class="links_name">About</span>
+            </a>
+            <span class="tooltip">About</span>
+        </li>
+
+        <li>
+            <a href="/portfolio/">
+                <i class='bx bx-code'></i>
+                <span class="links_name">Portfolio</span>
+            </a>
+            <span class="tooltip">Portfolio</span>
+        </li>
+
+        <li>
+            <a href="/posts/">
+                <i class='bx bx-pencil'></i>
+                <span class="links_name">Blog</span>
+            </a>
+            <span class="tooltip">Blog</span>
+        </li>
+
+        <li>
+            <a href="/contacts/">
+                <i class='bx bx-chat'></i>
+                <span class="links_name">Contact</span>
+            </a>
+            <span class="tooltip">Contact Me</span>
+        </li>
+    </ul>
+    <div class="bottom_logo">
+        <div class="bottom_logo-img">
+            <img src="{{site.baseurl}}/assets/images/logo_transparente_branco.png">
+        </div>
+    </div>
+</nav>
+
+<script>
+    let sidebar = document.querySelector('.sidebar');
+    let body = document.querySelector('body');
+
+    function hideAndShowSidebar(event) {
+        event.preventDefault();
+        sidebar.classList.toggle("active");
+        body.classList.toggle("active");
+    }
+</script>

@@ -3,69 +3,78 @@
 
 {% include head.html %}
 
-{% include navbar.html %}
-<main>
-    <div class="container">
-        <section id="profile">
-            <div class="apresentation py-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-sm-12 col-md-5 col-lg-5 my-3 mx-3">
-                            <img class="perfil" src="{{ site.baseurl }}/assets/images/Perfil.png" alt="eu">
-                            <br>
-                            <div class="row">
-                                <div class="col-12">
-                                    <h4 class="Profile-name">Thiago B. Mattos</h4>
+<body>
+    {% include sidebar.html %}
+    <main>
+        <div class="container">
+            {% include title.html%}
+            <section id="profile">
+                <div class="apresentation py-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-5 col-lg-5 my-3 mx-3">
+                                <img class="perfil" src="{{ site.baseurl }}/assets/images/Perfil.png" alt="eu">
+                                <br>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="Profile-name">Thiago B. Mattos</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <p class="align">Programmer</p>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="align">Programmer</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-1 icon"><i class="fas fa-user fa-lg"></i></div>
-                                <div class="col-8">
-                                    <p class="information">April 4, 2000</p>
-                                    <hr class="perfil-info">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-1 icon"><i class="fas fa-user fa-lg"></i></div>
+                                    <div class="col-8">
+                                        <p class="information">April 4, 2000</p>
+                                        <hr class="perfil-info">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-1"><i class="fas fa-map-marker-alt fa-lg"></i></div>
+                                    <div class="col-8">
+                                        <p class="information">Rio de Janeiro, Brazil</p>
+                                        <hr class="perfil-info">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-1"><i class="fas fa-map-marker-alt fa-lg"></i></div>
-                                <div class="col-8">
-                                    <p class="information">Rio de Janeiro, Brazil</p>
-                                    <hr class="perfil-info">
-                                </div>
+                            <div class="col-sm-12 col-md-5 col-lg-5 my-3 mx-3 about">
+                                <p class="about-text">
+                                    Atualmente cursando Bacharelado em Ciência da Computação pela Universidade Federal
+                                    do
+                                    Rio de Janeiro (UFRJ),
+                                    fiz ensino médio técnico em Programação de Jogos no Colégio Estadual José Leite
+                                    Lopes
+                                    (NAVE) onde descobri meu amor pelo desenvolvimento de todos os tipos de aplicações.
+                                    Desde então participei de diversos eventos de programação (Arduino Day, Encontro
+                                    RING,
+                                    NAVE+, entre outros) e de diversas edições da Global Game Jam.
+                                </p>
+                                <p class="about-text">
+                                    Estou atualmente trabalhando no projeto do Museu da Computação da UFRJ como
+                                    desenvolvedor FullStack e estudando Linguagens e ferramentas como Ruby on Rails,
+                                    Docker,
+                                    Kanban, arquitetura de sistemas, entre outras.
+                                    Além de estudar outras áreas de interesse, como inteligência artificial, segurança
+                                    web e
+                                    desenvolvimento de jogos.
+                                </p>
+                                <p class="about-text">
+                                    Em meu tempo livre gosto de jogar videogames, praticar esportes, como ciclismo,
+                                    tênis e vôlei, ler, tocar
+                                    violão e assistir filmes e animes com meus amigos.
+                                </p>
                             </div>
-                        </div>
-                        <div class="col-sm-12 col-md-5 col-lg-5 my-3 mx-3 about">
-                            <p class="about-text">
-                                Atualmente cursando Bacharelado em Ciência da Computação pela Universidade Federal do
-                                Rio de Janeiro (UFRJ),
-                                fiz ensino médio técnico em Programação de Jogos no Colégio Estadual José Leite Lopes
-                                (NAVE) onde descobri meu amor pelo desenvolvimento de todos os tipos de aplicações.
-                                Desde então participei de diversos eventos de programação (Arduino Day, Encontro RING,
-                                NAVE+, entre outros) e de diversas edições da Global Game Jam.
-                            </p>
-                            <p class="about-text">
-                                Estou atualmente trabalhando no projeto do Museu da Computação da UFRJ como
-                                desenvolvedor FullStack e estudando Linguagens e ferramentas como Ruby on Rails, Docker,
-                                Kanban, arquitetura de sistemas, entre outras.
-                                Além de estudar outras áreas de interesse, como inteligência artificial, segurança web e
-                                desenvolvimento de jogos.
-                            </p>
-                            <p class="about-text">
-                                Em meu tempo livre gosto de jogar videogames, praticar esportes, como ciclismo, tênis e vôlei, ler, tocar
-                                violão e assistir filmes e animes com meus amigos.
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</main>
+            </section>
+        </div>
+    </main>
+</body>
 {% include footer.html %}
