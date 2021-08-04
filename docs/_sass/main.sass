@@ -33,13 +33,17 @@ body
   display: flex
   flex-direction: column
   position: relative
+  transition: all 0.5s ease
   width: calc( 100% - 78px )
   left: 78px
-  transition: all 0.5s ease
+  @include tablets-and-down
+    width: calc( 100% - 60px )
+    left: 60px
   &.active
     transition: all 0.5s ease
-    width: calc( 100% - 240px )
-    left: 240px
+    @include desktop-and-up
+      width: calc( 100% - 240px )
+      left: 240px
 
 hr
   width: 100%

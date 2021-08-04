@@ -6,11 +6,14 @@
     top: 0
     left: 0
     height: 100%
-    width: 78px
     background-color: $primary-color
     padding: 6px 14px
     transition: all 0.5s ease
     border-right: 2px $terciary-color solid
+    z-index: 99
+    width: 78px
+    @include tablets-and-down
+        width: 60px
 
     .links_name
         transition: all 0.3s ease
@@ -111,6 +114,9 @@
                     text-align: center
                     font-size: 22px
                     font-weight: 200
+                    @include tablets-and-down
+                        font-size: 20px
+                        transform: translateX(-25%)
 
             .tooltip
                 position: absolute
@@ -141,10 +147,17 @@
             padding: 10px 20px
             height: 60px
             width: 78px
+            @include tablets-and-down
+                padding: 10px 12px
+
         img
             height: 45px
             width: 45px
             object-fit: cover
             border-radius: 12px
+            @include tablets-and-down
+                height: 35px
+                width: 35px
+
 
 
