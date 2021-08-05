@@ -33,6 +33,12 @@
             left: 90%
         ul
             li
+                a
+                    @include tablets-and-down
+                        transform: translateX(0)
+                    i
+                        @include tablets-and-down
+                            transform: translateX(0)
                 .tooltip
                     display: none
 
@@ -68,8 +74,9 @@
         opacity: 0
         pointer-events: none
 
-        i
-            font-size: 28px
+        img
+            width: 20px
+            height: 20px
             margin-right: 5px
 
     &__logo-name
@@ -101,6 +108,8 @@
                 transition: 0s
                 border-radius: 12px
                 white-space: nowrap
+                @include tablets-and-down
+                    transform: translateX(-8%)
 
                 &:hover
                     background-color: $text-color
@@ -115,8 +124,7 @@
                     font-size: 22px
                     font-weight: 200
                     @include tablets-and-down
-                        font-size: 20px
-                        transform: translateX(-25%)
+                        transform: translateX(-18%)
 
             .tooltip
                 position: absolute
@@ -135,6 +143,9 @@
                 opacity: 0
                 pointer-events: none
                 display: block
+                @include tablets-and-down
+                    transform: translate(-65%, -50%)
+
     
     .bottom_logo
         opacity: 1
