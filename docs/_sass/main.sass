@@ -35,11 +35,23 @@ body
   flex-direction: column
   position: relative
   transition: all 0.5s ease
-  width: calc( 100% - 78px )
-  left: 78px
   @include tablets-and-down
-    width: calc( 100% - 60px )
-    left: 60px
+    width: 100%
+    .sidebar
+      width: 0
+      display: none
+    .navbar
+      display: block
+      height: auto
+  @include desktop-and-up
+    width: calc( 100% - 78px )
+    left: 78px
+    .sidebar
+      width: 78px
+      display: block
+    .navbar
+      display: none
+      height: 0
   &.active
     transition: all 0.5s ease
     @include desktop-and-up
