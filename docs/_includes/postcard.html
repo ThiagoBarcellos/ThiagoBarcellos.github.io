@@ -1,5 +1,5 @@
 <article class="postcard">
-    <a class="postcard__img_link" href="#">
+    <a class="postcard__img_link" href="{{ site.baseurl }}{{ post.url }}">
         <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />
         <!--<img class="postcard__img" src="{{ site.baseurl }}/assets/images/logo.png" alt="Image Title" />-->
     </a>
@@ -16,7 +16,7 @@
             <li class="tag__item"><i class="fas fa-tag mr-2"></i>{{ post.tag }}</li>
             <li class="tag__item"><i class="fas fa-clock mr-2"></i>{% include readtime.html content=post.content%}</li>
             <li class="tag__item play">
-                <a href="#"><i class="fas fa-play mr-2"></i>Keep reading</a>
+                <a href="{{ site.baseurl }}{{ post.url }}"><i class="fas fa-play mr-2"></i>Keep reading</a>
             </li>
         </ul>
     </div>
