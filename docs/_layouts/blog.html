@@ -18,16 +18,18 @@
       {% for tag in site.tags %}
       <h2 id="{{ tag[0] | slugify }}"> <i class="fas fa-tag"> </i> {{ tag | first }}</h2>
       {% for post in tag[1] %}
-      <section class="posts-list__post">
+      {% include postcard.html %}
+      <!--<section class="posts-list__post">
         <h1>{{ post.title }} </h1>
         <p class="posts-list__post--date">{{ post.date | date_to_string }} por {{ post.author}}</p>
+        <p class="posts-list__post--readtime">{% include readtime.html content=post.content %}</p>
         <p>
           {{ post.description}}
         </p>
         <a href="{{ site.baseurl }}{{ post.url }}">
           Continue lendo...
         </a>
-      </section>
+      </section>-->
       {% endfor %}
       <div class="posts-list__divider"></div>
       {% endfor %}
