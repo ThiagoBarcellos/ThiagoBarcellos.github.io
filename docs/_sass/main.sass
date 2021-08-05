@@ -38,20 +38,21 @@ body
   @include tablets-and-down
     width: 100%
     .sidebar
-      width: 0
       display: none
-    .navbar
-      display: block
-      height: auto
+      width: 0
+      transition: all 0.5s ease
+      &.active
+        display: block
+        width: 240px
+        transition: all 0.5s ease
   @include desktop-and-up
     width: calc( 100% - 78px )
     left: 78px
     .sidebar
       width: 78px
       display: block
-    .navbar
+    #btn-mobile
       display: none
-      height: 0
   &.active
     transition: all 0.5s ease
     @include desktop-and-up

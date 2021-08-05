@@ -1,5 +1,5 @@
-<header>
-    <!--<nav class="menu container">
+<!--<header>
+  <nav class="menu container">
       <a class="menu__logo" href="/">
         <img class="menu__logo--icon" src="{{site.baseurl}}/assets/images/logo_transparente_branco.png">
       </a>
@@ -11,7 +11,7 @@
         <li class="menu__item"><a href="/contacts/" >Contato</a>
         </li>
       </ul>
-    </nav>-->
+    </nav>
   
   <div class="menu-mobile__icon">
     <a class="menu__logo" href="/">
@@ -57,4 +57,13 @@
           document.getElementsByClassName('menu-mobile')[0].style.height = '100%';
       }
     }*/
-  </script>
+  </script>-->
+
+<header>
+  <nav class="menu-simples-mobile">
+    <i class='bx bx-menu' id="btn-mobile" onclick="hideAndShowSidebar(event)"></i>
+    <a class="menu__logo" href="/">
+      <img class="menu__logo--icon" src="{{site.baseurl}}/assets/images/logo_transparente_branco.png">
+    </a>
+  </nav>
+</header>
