@@ -14,7 +14,9 @@
             <h2 class="portfolio-title">Games</h2>
 
             <div class="row">
-                {% include card.html %}
+                {% for game in site.data.projects.games %}
+                    {% include card.html include=game %}
+                {% endfor %}
             </div>
         </section>
         <section>

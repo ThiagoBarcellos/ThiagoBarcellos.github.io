@@ -1,0 +1,9 @@
+{
+    "card": [
+        {
+            "title": "title",
+            "description": "description",
+            "image": "logo.png"
+        }
+    ]
+}

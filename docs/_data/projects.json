@@ -8,7 +8,8 @@
             "desktop": true,
             "mobile": false,
             "language": "C#",
-            "path": "https://github.com/ThiagoBarcellos/GGJ_Project_2021"
+            "path": "https://github.com/ThiagoBarcellos/GGJ_Project_2021",
+            "home": true
         },
         {
             "title": "Cubetrix",
@@ -17,7 +18,8 @@
             "unity": true,
             "desktop": false,
             "mobile": true,
-            "language": "C#"
+            "language": "C#",
+            "home": true
         },
         {
             "title": "Cubetrix",
@@ -26,7 +28,15 @@
             "unity": true,
             "desktop": false,
             "mobile": true,
-            "language": "C#"
+            "language": "C#",
+            "home": true
+        }
+    ],
+    "projects":[
+        {
+            "title": "museu da computação",
+            "description" :"museu da computação",
+            "image": "https://picsum.photos/400"
         }
     ]
 }

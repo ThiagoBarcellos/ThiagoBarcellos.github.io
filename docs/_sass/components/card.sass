@@ -1,3 +1,4 @@
+@import "../_mixins"
 @import "../_variables"
 
 .card
@@ -6,26 +7,61 @@
     min-height: 520px
     max-width: 100%
     text-align: center
-    .card-title
-        font-size: 1.7em 
-        color: $text-color     
+    overflow: hidden
+    transition: all 0.3s ease
+    border-radius: 10px
+    &-body
+        @include desktop-and-up
+            &:after
+                content: ''
+                position: absolute
+                top: 30%
+                left: 0
+                height: 20px
+                width: 100%
+                background-color: $secondary-color
+                z-index: 5
+        @include large-desktops-and-up
+            &:after
+                content: ''
+                position: absolute
+                top: 36%
+                left: 0
+                height: 20px
+                width: 100%
+                background-color: $secondary-color
+                z-index: 5
+    &-title
+        cursor: default
+        font-size: 1.7em
+        color: $text-color
         font-family: 'Bebas Neue'
-    .card-text 
-        color: $text-color     
-        text-align: justify 
-        text-indent: 2.5em 
+    .card-text
+        cursor: default
+        color: $text-color
+        text-align: justify
+        text-indent: 2.5em
+    img
+        transition: all 0.3s ease
+    &:hover
+        img
+            @include desktop-and-up
+                transition: all 0.3s ease
+                transform: scale(1.1)
 
-.btn 
-    border-style: hidden 
-    background-color: $terciary-color-alt     
-    color:    $text-color     
+.btn
+    display: block
+    border-style: hidden
+    background: rgba(83, 83, 83, 0.4)
+    color: $text-color
 
-a.btn:hover 
-    background-color: $terciary-color-alt-hover 
-    color: $text-color     
+a.btn:hover
+    background-color: $terciary-color
+    color: $text-color
 
-.sections 
-    font-family: 'Bebas Neue' 
+.sections
+    font-family: 'Bebas Neue'
 
-.icon-card 
+.icon-card
+    cursor: default
     margin: auto

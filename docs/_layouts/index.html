@@ -36,6 +36,33 @@
                     NAVE+, entre outros) e de diversas edições da Global Game Jam.</p>
             </div>
         </section>
+        <section class="my-5">
+            <div class="container">
+                <h1 class="about-section__title">Um pouco dos meus projetos</h1>
+                <div class="row">
+                    {% for game in site.data.projects.games %}
+                        {% if game.home %}
+                            {% include card.html include=game %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <h1 class="about-section__title">Algumas de minhas postagens</h1>
+                <div>
+                    <h3 class="portfolio-title">Ultimo post</h3>
+                    {% for post in site.posts limit:1 %}
+                    {% include postcard.html%}
+                    {% endfor %}
+                    <h3 class="portfolio-title">Posts recentes</h3>
+                    {% for post in site.posts offset:1 limit:2 %}
+                    <h1>{{post.title}}</h1>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
         <section>
             {% include footer.html %}
         </section>

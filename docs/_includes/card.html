@@ -1,38 +1,42 @@
-{% for game in site.data.projects.games %}
+{% unless game %}
+{% assign prop = site.data.projects.projects[0] %}
+{% endunless %}
+{% assign prop = game %}
+
 <div class="col-lg-4 col-md-12 col-sm-12 justify-content-center my-3">
     <div class="card">
-        <img class="card-img-top" src="{{ site.baseurl }}/assets/images/{{game.image}}" alt="{{ site.baseurl }}/assets/images/{{game.title}}">
+        <img class="card-img-top" src="{{ site.baseurl }}/assets/images/{{prop.image}}"
+            alt="{{ site.baseurl }}/assets/images/{{prop.title}}">
         <div class="card-body d-flex flex-column">
             <div>
                 <h5 class="card-title">
-                    {{ game.title }}
+                    {{ prop.title }}
                 </h5>
                 <hr class="hr-card">
             </div>
             <div class="row">
                 <div class="my-2 col-12 icon-card">
-                    {% if game.unity %}
-                        <i class="fab fa-unity icon-card"></i>
+                    {% if prop.unity %}
+                    <i class="fab fa-unity icon-card"></i>
                     {% endif %}
 
-                    {% if game.desktop %}
-                        <i class="fas fa-desktop icon-card"></i>
+                    {% if prop.desktop %}
+                    <i class="fas fa-desktop icon-card"></i>
                     {% endif %}
 
-                    {% if game.mobile %}
-                        <i class="fas fa-mobile-alt icon-card"></i>
+                    {% if prop.mobile %}
+                    <i class="fas fa-mobile-alt icon-card"></i>
                     {% endif %}
 
-                    {{ game.language }}
+                    {{ prop.language }}
                 </div>
             </div>
             <div>
                 <p class="card-text">
-                    {{ game.description }}
+                    {{ prop.description }}
                 </p>
             </div>
-            <div class="mt-auto"><a href="{{ game.path }}" class="btn">Acesse</a></div>
+            <div class="mt-auto"><a href="{{ prop.path }}" class="btn">Acesse</a></div>
         </div>
     </div>
 </div>
-{% endfor %}
