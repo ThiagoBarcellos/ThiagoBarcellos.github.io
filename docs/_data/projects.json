@@ -20,23 +20,14 @@
             "mobile": true,
             "language": "C#",
             "home": true
-        },
-        {
-            "title": "Cubetrix",
-            "description": "Um jogo sobre o cavaleiro sem cabeça deve encontrar sua cabeça que brigou com ele, para avançar pelos desafios usa de objetos substitutos para sua cabeça em uma união de pinball e dungeon crawler.",
-            "image": "Cubetrix.png",
-            "unity": true,
-            "desktop": false,
-            "mobile": true,
-            "language": "C#",
-            "home": true
         }
     ],
     "projects":[
         {
-            "title": "museu da computação",
-            "description" :"museu da computação",
-            "image": "https://picsum.photos/400"
+            "title": "museu da computação ufrj",
+            "description" :"Site desenvolvido para o museu da computação da UFRJ para divulgar suas exposições e publicar posts informativos sobre várias áreas da computação.",
+            "image": "MuseuComputacao.png",
+            "path": "https://museucomputacao.github.io"
         }
     ]
 }

@@ -1,7 +1,7 @@
-{% unless game %}
-{% assign prop = site.data.projects.projects[0] %}
-{% endunless %}
-{% assign prop = game %}
+{% assign prop = include.type %}
+{% if prop == null %}
+{% assign prop = site.data.default.card[0] %}
+{% endif %}
 
 <div class="col-lg-4 col-md-12 col-sm-12 justify-content-center my-3">
     <div class="card">

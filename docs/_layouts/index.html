@@ -41,9 +41,9 @@
                 <h1 class="about-section__title">Um pouco dos meus projetos</h1>
                 <div class="row">
                     {% for game in site.data.projects.games %}
-                        {% if game.home %}
-                            {% include card.html include=game %}
-                        {% endif %}
+                    {% if game.home %}
+                    {% include card.html type=game %}
+                    {% endif %}
                     {% endfor %}
                 </div>
             </div>
@@ -56,10 +56,16 @@
                     {% for post in site.posts limit:1 %}
                     {% include postcard.html%}
                     {% endfor %}
-                    <h3 class="portfolio-title">Posts recentes</h3>
-                    {% for post in site.posts offset:1 limit:2 %}
-                    <h1>{{post.title}}</h1>
-                    {% endfor %}
+                    <!--<h3 class="portfolio-title">Posts recentes</h3>
+                    {% for post in site.posts limit:10 offset: 2 %}
+                    {% if post.tags-icon == null %}
+                    <a href="{{ post.url }}"><i class="fas fa-robot mr-3"></i>{{ post.title }}</a>
+                    <hr>
+                    {% else %}
+                    <a href="{{ post.url }}"><i class="{{ post.tags-icon}} mr-3"></i>{{ post.title }}</a>
+                    <hr>
+                    {%endif%}
+                    {% endfor %}-->
                 </div>
             </div>
         </section>

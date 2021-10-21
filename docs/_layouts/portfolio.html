@@ -15,7 +15,15 @@
 
             <div class="row">
                 {% for game in site.data.projects.games %}
-                    {% include card.html include=game %}
+                    {% include card.html type=game %}
+                {% endfor %}
+            </div>
+
+            <h2 class="portfolio-title">Web Development</h2>
+
+            <div class="row">
+                {% for projects in site.data.projects.projects %}
+                    {% include card.html type=projects %}
                 {% endfor %}
             </div>
         </section>

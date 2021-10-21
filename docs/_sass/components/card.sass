@@ -25,9 +25,9 @@
             &:after
                 content: ''
                 position: absolute
-                top: 36%
+                top: 34%
                 left: 0
-                height: 20px
+                height: 25px
                 width: 100%
                 background-color: $secondary-color
                 z-index: 5
@@ -42,6 +42,10 @@
         text-align: justify
         text-indent: 2.5em
     img
+        max-height: 190px
+        width: 100%
+        object-fit: cover
+        position: relative
         transition: all 0.3s ease
     &:hover
         img
@@ -61,6 +65,10 @@ a.btn:hover
 
 .sections
     font-family: 'Bebas Neue'
+    @include tablets-and-down
+        margin-top: 11vw
+    @include mobile-and-down
+        margin-top: 15vh
 
 .icon-card
     cursor: default
